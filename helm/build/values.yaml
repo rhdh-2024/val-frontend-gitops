@@ -1,0 +1,15 @@
+app:
+  name: val-poi-map-app
+  namespace: val
+  cluster: .apps.rosa-qxs8d.dusy.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/rhdh-2024/val-frontend
+  org: rhdh-2024
+  name: val-frontend
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: val/poi-map-app
+  tag: latest
